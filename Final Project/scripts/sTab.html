@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Student </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href = "decorate.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet"> 
+</head>
+    <body>
+        <div class="topnav" style="font-family: 'Caveat', cursive;">
+            <a href="index.html">Home</a>
+            <a href="pTab.html">Professor</a>
+            <a class="active" href="sTab.html">Student</a>
+        </div>
+
+        <div class = "box">
+          <form action = "includes/scnum.php" method="POST">
+  	        <h2 style="font-family: 'Arial', cursive;"> List Sections (Course), Classrooms, Meeting Days and Time, and Number (Students) Enrolled in each Section </h2>
+  	        <input style="background-color: #e8f0fe" SIZE=13 maxlength=7 type="text" id="sc_num" name="sc_num" placeholder="Course Number">
+  	        <input type="submit" value="Submit"> <input type = "reset" value = "Clear"><br><br>
+          </form>
+
+          <form action = "includes/scwid.php" method="POST">
+  	        <h2 style="font-family: 'Arial', cursive;"> List all Courses the Student took and their Grades </h2>
+  	        <input style="background-color: #e8f0fe" SIZE=12 maxlength=9 type="text" id="cwid" name="cwid" placeholder="Student's CWID">
+  	        <input type="submit" value="Submit"> <input type = "reset" value = "Clear"><br><br>
+          </form>
+        </div>
+    </body>
+</html>

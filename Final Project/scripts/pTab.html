@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Professor </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="decorate.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <div class="topnav" style="font-family: 'Caveat', cursive;">
+            <a href="index.html">Home</a>
+            <a class="active" href="pTab.html">Professor</a>
+            <a href="sTab.html">Student</a>
+        </div>
+
+        <div class="box">
+            <form action="includes/pssn.php" method="POST">
+                <h2 style="font-family: 'Arial', cursive;"> Find Name, Classrooms, Meeting Days, and Time of Class </h2>
+                <input style="background-color: #e8f0fe" SIZE=13 maxlength=9 type="text" id="p_ssn" name="p_ssn" value="" placeholder="Professor's SSN">
+                <input type="submit" value="Submit"> <input type="reset" value="Clear"><br><br><br><br>
+            </form>
+            <form action="includes/pcnum.php" method="POST">
+                <h2 style="font-family: 'Arial', cursive;"> Find Distinct Grades of Students </h2>
+                <input style="background-color: #e8f0fe" SIZE=13 maxlength=7 type="text" id="c_num" name="c_num" value="" placeholder="Course Number"><br>
+                <input style="background-color: #e8f0fe" SIZE=13 maxlength=10 type="text" id="s_num" name="s_num" value="" placeholder="Section Number">
+                <input type="submit" value="Submit"> <input type="reset" value="Clear"><br><br>
+            </form>
+        </div>
+    </body>
+</html>
